@@ -1,3 +1,3 @@
-- 校级一等奖学金, 2022.  
+- 市优秀团员, 2023.  
 
-- Outstanding Graduation Thesis, XXX University, 2023. 
+- 优秀毕业生, 2024. 
