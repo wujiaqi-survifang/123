@@ -1,4 +1,4 @@
-[![wujiaqi-survifang](https://img.shields.io/badge/wujiaqi-survifang-github-blue?logo=github)](https://wujiaqi-survifang.github.com/123)
+[![wujiaqi-survifang](https://github.com/wujiaqi-survifang/123/edit/main)](https://github.com/wujiaqi-survifang)
 
 I am currently pursuing a bachelor's degree in Sheep Marine Engineering at the Department of Ship and Ocean Engineering, Huazhong University of Science and Technology.
 #### Email  
