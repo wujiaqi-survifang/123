@@ -1,69 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
+    <meta charset="UTF-8">
     <title>职位申请表</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            max-width: 600px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #ffe4e1;
-        }
-        fieldset {
-            border: 2px solid #4CAF50;
-            border-radius: 10px;
+            background-color: #f0f8ff;  /* 添加浅蓝色背景 */
             padding: 20px;
         }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        input[type="radio"] {
-            margin: 0 5px 0 15px;
-        }
-        textarea {
-            width: 100%;
-            height: 80px;
-        }
-        button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+        /* 水平排列经验选项 */
+        .experience-group {
+            display: flex;
+            gap: 20px;
         }
     </style>
 </head>
 <body>
-    <h2>Web职位申请表</h2>
+    <h1>申请表</h1>
     <form>
+        <!-- 姓名输入 -->
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <!-- 职位选择 -->
         <fieldset>
-            <div class="form-group">
-                <label>姓名：</label>
-                <input type="text" required>
-            </div>
-
-            <div class="form-group">
-                <label>感兴趣的职位：</label><br>
-                <input type="radio" name="job" value="design"> Web设计人员
-                <input type="radio" name="job" value="manage"> Web管理人员
-                <input type="radio" name="job" value="develop"> Web开发人员
-            </div>
-
-            <div class="form-group">
-                <label>其他要求：</label><br>
-                <textarea placeholder="包括薪水待遇、工作地点等"></textarea>
-            </div>
-
-            <div class="form-group">
-                <input type="checkbox" checked> 发送确认消息
-                <input type="checkbox" style="margin-left: 20px;"> 无经验
-            </div>
-
-            <button type="submit">确定</button>
-            <button type="reset">重置</button>
+            <legend>感兴趣的职位：</legend>
+            <input type="radio" id="designer" name="position" value="Web设计人员">
+            <label for="designer">Web设计人员</label>
+            
+            <input type="radio" id="admin" name="position" value="Web管理员" checked>
+            <label for="admin">Web管理员</label>
+            
+            <input type="radio" id="developer" name="position" value="Web开发人员">
+            <label for="developer">Web开发人员</label>
         </fieldset>
+        <br>
+
+        <!-- 其他要求 -->
+        <label for="requirements">其他要求：</label><br>
+        <textarea id="requirements" name="requirements" rows="4" cols="50" 
+                  placeholder="包括薪水待遇、工作地点等"></textarea>
+        <br><br>
+
+        <!-- 确认消息复选框 -->
+        <input type="checkbox" id="confirm" name="confirm" checked>
+        <label for="confirm">发送确认消息</label>
+        <br><br>
+
+         <label for="experience">经验</label>
+        <select id="experience">
+            <option value="无经验">无经验</option>
+            <option value="有经验">有经验</option>
+
+        </select><br>
+        <div class="button-container">
+            <input type="submit" value="确定">
+            <input type="reset" value="重置">
+        </div>
     </form>
 </body>
 </html>
